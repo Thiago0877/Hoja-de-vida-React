@@ -1,9 +1,4 @@
-/* estilos.css */
-* {
-  background-color: blueviolet;
-}
-
-h1, h2{
+h3{
     color: rgb(44, 17, 48);
   font-family: 'Times New Roman', Times, serif;
 }

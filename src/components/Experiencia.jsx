@@ -7,7 +7,7 @@ export default function Experiencia() {
           <strong>Desarrollador Full Stack</strong> - Navisoft Gaming (2022-2024)
         </li>
         <li>
-          <strong>Instructor TIC</strong> - SENA (2020-2022)
+          <strong>Desarrollador de software </strong> - Ubisoft (2020-2022)
         </li>
       </ul>
     </section>
