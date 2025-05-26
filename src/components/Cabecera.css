@@ -3,7 +3,12 @@
   background-color: blueviolet;
 }
 
-h1, h2{
+h1{
     color: rgb(44, 17, 48);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif 32px;
+}
+
+ h2{
+    color: rgb(44, 17, 48);
+  font-family: 'Times New Roman', Times, serif 28px;
 }

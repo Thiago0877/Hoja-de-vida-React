@@ -1,3 +1,5 @@
+import './Experiencia.css';
+
 export default function Experiencia() {
   return (
     <section>
