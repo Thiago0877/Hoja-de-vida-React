@@ -1,3 +1,5 @@
+import './Cabecera.css';
+
 export default function CabeceraCV() {
   return (
     <header>

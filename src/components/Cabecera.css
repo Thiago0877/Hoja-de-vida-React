@@ -1,0 +1,8 @@
+/* estilos.css */
+* {
+  background-color: blueviolet;
+}
+
+h1, h2{
+  font-family: 'Times New Roman', Times, serif;
+}
