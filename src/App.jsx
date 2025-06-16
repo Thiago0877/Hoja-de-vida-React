@@ -1,14 +1,11 @@
-import Experiencia from './components/Experiencia'
-import Educacion from './components/Educacion'
-import StackTecnologias from './components/StackTecnologias'
+import { datosPersonales } from './data';
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Mi CV Dinámico</h1>
-      <StackTecnologias />
-      <Educacion />
-      <Experiencia />
+    <div>
+      <h1>{datosPersonales.nombre}</h1>
+      <h2>{datosPersonales.cargo}</h2>
+      <p>{datosPersonales.ciudad} | {datosPersonales.contacto}</p>
     </div>
   );
 }
