@@ -1,42 +1,28 @@
-const educacionData = [
-  {
-    institucion: "SENA",
-    curso: "Técnica en Sistemas",
-    año: "2023-2024"
-  },
-  {
-    institucion: "SENA",
-    curso: "Tecnología en Análisis y Desarrollo de Software",
-    año: "2025-2026"
-  },
-  {
-    institucion: "Platzi",
-    curso: "Curso Profesional de React.js",
-    año: "2023"
-  },
-  {
-    institucion: "Udemy",
-    curso: "Curso de Node.js y Express",
-    año: "2022"
-  },
-  {
-    institucion: "FreeCodeCamp",
-    curso: "Responsive Web Design Certification",
-    año: "2021"
+// src/components/Educacion.jsx
+import React from "react";
+
+export default function Educacion({ estudios }) {
+  if (!estudios || estudios.length === 0) {
+    return (
+      <section>
+        <h3>Educación</h3>
+        <p>No se ha registrado formación académica.</p>
+        <hr />
+      </section>
+    );
   }
-];
 
-const Educacion = () => (
-  <div>
-    <h2>Formación Académica</h2>
-    <ul>
-      {educacionData.map((edu, i) => (
-        <li key={i}>
-          <strong>{edu.curso}</strong> - {edu.institucion} ({edu.año})
-        </li>
-      ))}
-    </ul>
-  </div>
-);
-
-export default Educacion;
+  return (
+    <section>
+      <h3>Educación</h3>
+      <ul>
+        {estudios.map(({ id, titulo, universidad, periodo }) => (
+          <li key={id}>
+            <strong>{titulo}</strong> - {universidad} ({periodo})
+          </li>
+        ))}
+      </ul>
+      <hr />
+    </section>
+  );
+}

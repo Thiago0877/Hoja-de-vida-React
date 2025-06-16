@@ -1,10 +1,12 @@
 // src/components/Perfil.jsx
-function Perfil({ resumen }) {
+import React from "react";
+
+export default function Perfil({ texto }) {
   return (
     <section>
-      <h3>Perfil Profesional</h3>
-      <p>{resumen}</p>
+      <h3>Perfil</h3>
+      <p>{texto}</p>
+      <hr />
     </section>
   );
 }
-export default Perfil;

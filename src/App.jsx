@@ -1,5 +1,5 @@
-import Perfil from './components/Perfil';
-import { resumen } from './data';
+import Experiencia from './components/Experiencia';
+import { experiencias } from './data';
 import { cabecera } from './data/cvData';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div>
       <CabeceraCV {...cabecera} />
       <Perfil resumen={resumen} />
+      <Experiencia experiencias={experiencias} />
     </div>
   );
 }
