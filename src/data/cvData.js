@@ -1,4 +1,4 @@
-export const datosPersonales = {
+export const cabecera = {
   nombre: "Santiago Lezcano Escobar",
   profesion: "Desarrollador UI Frontend"
 };
