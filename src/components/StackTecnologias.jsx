@@ -1,35 +1,40 @@
-export default function StackTecnologias() {
-  const tecnologias = [
-    { id: 1, nombre: "React", tipo: "frontend" },
-    { id: 2, nombre: "Node.js", tipo: "backend" },
-    { id: 3, nombre: "JavaScript", tipo: "frontend" },
-    { id: 4, nombre: "MySQL", tipo: "base de datos" }
-  ];
+const tecnologias = ["React", "Node.js", "JavaScript", "MySQL", "HTML", "CSS", "Python"];
 
-  // Función para asignar colores según el tipo de tecnología
-  const obtenerColor = (tipo) => {
-    switch (tipo) {
-      case "frontend":
-        return "blue";
-      case "backend":
-        return "green";
-      case "base de datos":
-        return "orange";
-      default:
-        return "gray";
-    }
-  };
+const tiposPorTecnologia = {
+  "React": "frontend",
+  "Node.js": "backend",
+  "JavaScript": "frontend",
+  "MySQL": "base de datos",
+  "HTML": "frontend",
+  "CSS": "frontend",
+  "Python": "backend"
+};
 
-  return (
-    <section>
-      <h3>Stack de Tecnologías</h3>
-      <ul>
-        {tecnologias.map((tech) => (
-          <li key={tech.id} style={{ color: obtenerColor(tech.tipo) }}>
-            {tech.nombre} - <em>{tech.tipo}</em>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+const getColor = (tec) => {
+  const tipo = tiposPorTecnologia[tec];
+  switch (tipo) {
+    case "frontend":
+      return "bg-blue-200 text-blue-800";
+    case "backend":
+      return "bg-green-200 text-green-800";
+    case "base de datos":
+      return "bg-orange-200 text-orange-800";
+    default:
+      return "bg-gray-200 text-gray-800";
+  }
+};
+
+const StackTecnologias = () => (
+  <div>
+    <h2 className="text-xl font-bold mb-4">Stack de Tecnologías</h2>
+    <div className="flex flex-wrap gap-2">
+      {tecnologias.map((tec, i) => (
+        <span key={i} className={`px-3 py-1 rounded text-sm font-medium ${getColor(tec)}`}>
+          {tec}
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
+export default StackTecnologias;
