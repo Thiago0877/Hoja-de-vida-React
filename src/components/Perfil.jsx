@@ -1,10 +1,10 @@
-export default function Perfil() {
+// src/components/Perfil.jsx
+function Perfil({ resumen }) {
   return (
     <section>
-      <h3>Perfil</h3>
-      <p>
-        Tecnologo en Analisis y Desarrollo de software con experiencia en desarrollo web y móvil, apasionado por la tecnología.
-      </p>
+      <h3>Perfil Profesional</h3>
+      <p>{resumen}</p>
     </section>
   );
 }
+export default Perfil;
