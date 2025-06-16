@@ -1,5 +1,6 @@
+// src/data/cvData.js
 export const cabecera = {
-  nombre: "Santiago Lezcano Escobar",
+  nombre: "Nombre del Aprendiz",
   profesion: "Desarrollador UI Frontend"
 };
 
@@ -120,7 +121,6 @@ export const experiencia = [
   }
 ];
 
-
 export const stackTecnologias = [
   { id: 1, nombre: "React", tipo: "frontend" },
   { id: 2, nombre: "Node.js", tipo: "backend" },
@@ -128,7 +128,6 @@ export const stackTecnologias = [
   { id: 4, nombre: "PostgreSQL", tipo: "base de datos" }
 ];
 
-/* Nuevas secciones */
 export const proyectos = [
   {
     id: 1,
