@@ -22,3 +22,5 @@ En este ejercicio aprendimos a renderizar nuestro proyecto en react, tambien usa
  (npm install / npm run dev)
 
 ![alt text](image.png)
+
+![alt text](image-1.png)

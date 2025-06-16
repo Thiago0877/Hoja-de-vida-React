@@ -1,4 +1,3 @@
-// src/components/Experiencia.jsx
 const experienciaData = [
   {
     cargo: "Desarrollador Full Stack",

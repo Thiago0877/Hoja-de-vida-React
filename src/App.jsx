@@ -1,17 +1,14 @@
-import CabeceraCV from "./components/CabeceraCV.jsx";
-import Perfil from "./components/Perfil.jsx";
-import Educacion from "./components/Educacion.jsx";
-import Experiencia from "./components/Experiencia.jsx";
-import StackTecnologias from "./components/StackTecnologias.jsx";
+import Experiencia from './components/Experiencia'
+import Educacion from './components/Educacion'
+import StackTecnologias from './components/StackTecnologias'
 
 function App() {
   return (
-    <div>
-      <CabeceraCV />
-      <Perfil />
+    <div style={{ padding: "2rem" }}>
+      <h1>Mi CV Dinámico</h1>
+      <StackTecnologias />
       <Educacion />
       <Experiencia />
-      <StackTecnologias />
     </div>
   );
 }
