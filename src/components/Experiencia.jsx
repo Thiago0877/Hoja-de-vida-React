@@ -1,37 +1,79 @@
-export default function Experiencia() {
-  const experiencia = [
-    { id: 1, puesto: "Desarrollador Full Stack", empresa: "Navisoft Gaming", periodo: "2022-2024"},
-    { id: 2, puesto: "Desarrollador de software", empresa: "Ubisoft", periodo: "2020-2022"},
-    { id: 3, puesto: "Software Engineer", empresa: "Google", periodo: "2019-2022"},
-    { id: 4, puesto: "Backend Developer", empresa: "Amazon", periodo: "2020-2023"},
-    { id: 5, puesto: "Full Stack Developer", empresa: "Microsoft", periodo: "2018-2021"},
-    { id: 6, puesto: "Frontend Engineer", empresa: "Facebook (Meta)", periodo: "2021-"},
-    { id: 7, puesto: "Software Developer", empresa: "IBM", periodo: "2016-2019"},
-    { id: 8, puesto: "DevOps Engineer", empresa: "Netflix", periodo: "2020-2023"},
-    { id: 9, puesto: "Mobile Developer", empresa: "Apple", periodo: "2017-2020"},
-    { id: 10, puesto: "Site Reliability Engineer", empresa: "Spotify", periodo: "2019-2022"}
-  ];
-
-  // Renderiza condicionalmente si no hay experiencia
-  if (experiencia.length === 0) {
-    return (
-      <section>
-        <h3>Experiencia Profesional</h3>
-        <p>No se ha registrado experiencia profesional.</p>
-      </section>
-    );
+// src/components/Experiencia.jsx
+const experienciaData = [
+  {
+    cargo: "Desarrollador Full Stack",
+    empresa: "Navisoft Gaming",
+    año: "2022-2024",
+    descripcion: "Desarrollo completo de plataformas de videojuegos y backend en tiempo real."
+  },
+  {
+    cargo: "Desarrollador de software",
+    empresa: "Ubisoft",
+    año: "2020-2022",
+    descripcion: "Participación en el desarrollo de sistemas de juego y herramientas internas."
+  },
+  {
+    cargo: "Software Engineer",
+    empresa: "Google",
+    año: "2019-2022",
+    descripcion: "Implementación de soluciones escalables en la nube con enfoque en rendimiento."
+  },
+  {
+    cargo: "Backend Developer",
+    empresa: "Amazon",
+    año: "2020-2023",
+    descripcion: "Desarrollo de servicios RESTful y microservicios para e-commerce."
+  },
+  {
+    cargo: "Full Stack Developer",
+    empresa: "Microsoft",
+    año: "2018-2021",
+    descripcion: "Construcción de soluciones integrales en la nube con Azure y React."
+  },
+  {
+    cargo: "Frontend Engineer",
+    empresa: "Facebook (Meta)",
+    año: "2021-",
+    descripcion: "Optimización de interfaces de usuario con React y rendimiento accesible."
+  },
+  {
+    cargo: "Software Developer",
+    empresa: "IBM",
+    año: "2016-2019",
+    descripcion: "Desarrollo de soluciones empresariales y mantenimiento de sistemas heredados."
+  },
+  {
+    cargo: "DevOps Engineer",
+    empresa: "Netflix",
+    año: "2020-2023",
+    descripcion: "Automatización de despliegues y monitoreo de sistemas distribuidos."
+  },
+  {
+    cargo: "Mobile Developer",
+    empresa: "Apple",
+    año: "2017-2020",
+    descripcion: "Creación de aplicaciones iOS con Swift y mejora de experiencia de usuario."
+  },
+  {
+    cargo: "Site Reliability Engineer",
+    empresa: "Spotify",
+    año: "2019-2022",
+    descripcion: "Garantía de alta disponibilidad y rendimiento en plataformas de streaming."
   }
+];
 
-  return (
-    <section>
-      <h3>Experiencia Profesional</h3>
-      <ul>
-        {experiencia.map((exp) => (
-          <li key={exp.id}>
-            <strong>{exp.puesto}</strong> - {exp.empresa} ({exp.periodo})
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+const Experiencia = () => (
+  <div>
+    <h2>Experiencia Laboral / Proyectos</h2>
+    <ul>
+      {experienciaData.map((exp, i) => (
+        <li key={i}>
+          <strong>{exp.cargo}</strong> en {exp.empresa} ({exp.año})<br />
+          <em>{exp.descripcion}</em>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+export default Experiencia;
